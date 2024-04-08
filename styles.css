@@ -1,0 +1,219 @@
+/*    
+    "Don't watch the clock. Do what it does. Keep going."
+                                            Sam Levenson
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(236, 235, 235);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
+h4 {
+    margin: 8px;
+    color: red;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+
+#nav span {
+    margin: 15px;
+}
+
+#nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#img-wrapper {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+#nav-bar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 30px;
+}
+
+#nav-bar li {
+    margin: 0 55px 0 0;
+}
+
+/*form input setup*/
+
+#form #email{
+    background: none;
+    border: none;
+    outline-offset: none;
+    outline-style: none;
+    border-bottom: 1px solid black;
+}
+
+#form #email:active {
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#form #submit {
+    background: rgb(18, 189, 18);
+    border: 1px solid transparent;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#main {
+    margin-top: 60px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#intro {
+    padding: 35px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#intro header {
+    margin-top: 80px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em;
+}
+
+#intro ul {
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#intro li{
+    color: black;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#intro .strong {
+    font-weight: 400;
+    font-size: 2em;
+    color: orangered;
+}
+
+.min-header{
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 45px;
+}
+
+#video-wrapper iframe {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: 92vh;
+}
+
+article {
+    font-weight: 200;
+    font-size: 1.1em;
+    margin: 45px;
+}
+
+/*items setup section*/
+
+#items-content {
+    background-color: initial;
+    width: 100%;
+    height: auto;
+}
+
+#items-content ul li{
+    background-color: white;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    padding: 50px 90px 50px 0px;
+    justify-content: left;
+}
+
+#items-content ul li span{
+    padding: 50px;
+    margin: 5px;
+}
+
+#items-content ul li span:nth-of-type(2){
+    background-color: rgb(236, 235, 235);
+}
+
+#items-content img {
+    max-width: 70%;
+}
+
+#items-content p {
+    color: gray;
+    margin-top: 6px;
+}
+
+#items-content span button{
+    background-color: yellow;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/*Media query for tablet and phone screens */
+
+@media screen and (max-width: 460px){
+    #nav span{
+        margin-left: -50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form #email {
+        background: yellow;
+    }
+
+    #nav-bar ul li:nth-of-type(1) {
+        display: none;
+    } 
+
+    h3 {
+        font-weight: 200;
+    }
+    h4 {
+        font-weight: 200;
+    }
+
+    #items-content ul li span p {
+        display: none;
+    }
+}

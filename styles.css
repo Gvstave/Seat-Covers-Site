@@ -1,3 +1,4 @@
+/*The images and content article used in this demo where borrowed from IKEA KLIPPLAN*/
 /*    
     "Don't watch the clock. Do what it does. Keep going."
                                             Sam Levenson
@@ -119,7 +120,7 @@ h4 {
 #intro ul {
     list-style-type: none;
     width: 70%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 #intro li{

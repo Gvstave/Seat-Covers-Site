@@ -3,10 +3,6 @@
                                             Sam Levenson
 */
 
-/*Will continue to work on this project when I get the energy*/
-
-/*The images and articles in this demo was borrowed from IKEA KLIPPLAN assets*/
-
 * {
     padding: 0;
     margin: 0;
@@ -209,7 +205,7 @@ article {
         display: block;
         width: 100%;
         height: 62px;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         background-color: inherit;
     }
@@ -226,11 +222,11 @@ article {
         width: 100%;
         max-width: 40px;
         height: auto;
-        margin-left: 12px;
+        margin-left: 10px;
     }
 
     #nav-bar {
-        margin-left: 15px;
+        margin: 0;
         overflow: hidden;
     }
 

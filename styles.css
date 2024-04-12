@@ -1,4 +1,11 @@
-/*Will continue to work on this project when get the energy*/
+/*    
+    "Don't watch the clock. Do what it does. Keep going."
+                                            Sam Levenson
+*/
+
+/*Will continue to work on this project when I get the energy*/
+
+/*The images and articles in this demo was borrowed from IKEA KLIPPLAN assets*/
 
 * {
     padding: 0;
@@ -10,7 +17,6 @@
 html, body {
     background-color: rgb(236, 235, 235);
     font-family: sans-serif;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -33,7 +39,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: inherit;
+    background-color: rgba(236, 235, 235);
 }
 
 #nav span {
@@ -64,30 +70,39 @@ h4 {
 
 /*form input setup*/
 
+#form {
+    border: 1px solid orangered;
+    border-radius: 3px;
+    padding: 1px;
+    margin-right: 5px;
+}
+
 #form #email{
     background: none;
     border: none;
     outline-offset: none;
     outline-style: none;
-    border-bottom: 1px solid black;
 }
 
 #form #email:active {
-    background-color: yellow;
+    background-color: rgba(255, 68, 0, 0.425);
     border: 1px solid red;
 }
 
 #form #submit {
-    background: rgb(18, 189, 18);
+    background: orangered;
     border: 1px solid transparent;
     padding: 2px;
     border-radius: 3px;
 }
 
+/*form setup end*/
+
 #main {
     margin-top: 60px;
     width: 100vw;
     height: 100vh;
+    background-color: inherit;
 }
 
 #intro {
@@ -95,7 +110,7 @@ h4 {
     text-align: left;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #intro header {
@@ -134,7 +149,7 @@ h4 {
     margin-top: 50px;
     display: block;
     width: 100%;
-    height: 92vh;
+    height: 100vh;
 }
 
 article {
@@ -146,7 +161,6 @@ article {
 /*items setup section*/
 
 #items-content {
-    background-color: initial;
     width: 100%;
     height: auto;
 }
@@ -190,29 +204,179 @@ article {
 
 /*Media query for tablet and phone screens */
 
-@media screen and (max-width: 460px){
-    #nav span{
-        margin-left: -50px;
+@media screen and (max-width: 510px){
+    #nav {
+        display: block;
+        width: 100%;
+        height: 62px;
+        justify-content: right;
+        align-items: center;
+        background-color: inherit;
+    }
+
+    #nav div {
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    
+    #img-wrapper {
+        width: 100%;
+        max-width: 40px;
+        height: auto;
+        margin-left: 12px;
     }
 
-    #form #email {
-        background: yellow;
+    #nav-bar {
+        margin-left: 15px;
+        overflow: hidden;
     }
 
-    #nav-bar ul li:nth-of-type(1) {
-        display: none;
-    } 
+    
+    /*form input setup*/
 
-    h3 {
+    #form {
+        border: none;
+        background-color: rgba(128, 128, 128, .1);
+        padding: 1px;
+    }
+    
+    #form #email{
+        outline-offset: none;
+        outline-style: none;
+        border-bottom: none;
+    }
+    
+    #form #submit {
+        background-color: rgb(124, 192, 23);
+        padding: 2px;
+        border-radius: 3px;
+    }
+    
+    /*form setup end*/
+    
+    #main {
+        margin-top: 60px;
+        width: 100vw;
+        height: 88vh;
+        background-color: inherit;
+    }
+    
+    #intro {
+        padding: 5px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #intro header {
+        margin-top: 80px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    #intro ul {
+        list-style-type: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    #intro li{
+        color: black;
+        margin-top:25px;
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    #intro .strong {
+        font-weight: 400;
+        font-size: 1.5em;
+        color: orangered;
+    }
+    
+    .min-header{
+        font-weight: 400;
+        font-size: 1.3em;
+        margin: 45px;
+    }
+    
+    #video-wrapper iframe {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    article {
         font-weight: 200;
+        font-size: 1.1em;
+        margin: 45px;
     }
-    h4 {
-        font-weight: 200;
+    
+    /*items setup section*/
+    
+    #items-content {
+        width: 100%;
+        height: 50%;
+        background-color: gray;
+    }
+    
+    #items-content ul li{
+        display: block;
+        background-color: white;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    #items-content ul li span{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    #items-content ul li span:nth-of-type(2){
+        background-color: unset;
+        width: 70%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 5px;
     }
 
-    #items-content ul li span p {
+    #items-content ul li:nth-child(even){
+        background-color: inherit;
+    }
+    
+    #items-content img {
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    #items-content p {
         display: none;
+    }
+    
+    #items-content span button{
+        background-color: unset;
+        max-width: 50%;
+        height: 30px;
+        border: 1px solid orangered;
+        border-radius: 3px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    #items-content span button:hover {
+       background-color: orangered;
     }
 }
+
+/*
+media query for smaller phone screens
+
+@media screen and(max-width: 326px){
+
+}*/

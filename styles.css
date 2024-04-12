@@ -120,7 +120,7 @@ h4 {
 #intro ul {
     list-style-type: none;
     width: 70%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 #intro li{
@@ -282,8 +282,8 @@ article {
     
     #intro ul {
         list-style-type: none;
-        width: 70%;
-        margin: 0 auto;
+        width: 90%;
+        margin: 0;
     }
     
     #intro li{

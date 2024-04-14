@@ -202,11 +202,11 @@ article {
 /*
 media query for tablet screens **coming soon**
 
-@media screen and(max-width: 510px){
+@media screen and(min-width: 510px) && (max-width: 650){
 
 }*/
 
-/*Media query for phabletd and phone screens */
+/*Media query for phablets and phone screens */
 
 @media screen and (max-width: 510px){
     #nav {
@@ -299,7 +299,6 @@ media query for tablet screens **coming soon**
         font-weight: 400;
         font-size: 1.5em;
         color: orangered;
-        text-align: center; 
     }
     
     .min-header{
@@ -333,7 +332,7 @@ media query for tablet screens **coming soon**
         display: block;
         background-color: white;
         margin-top: 0;
-        padding: 0;
+        padding: 50px;
     }
     
     #items-content ul li span{

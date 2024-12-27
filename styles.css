@@ -215,7 +215,7 @@ media query for tablet screens **coming soon**
         height: 62px;
         justify-content: center;
         align-items: center;
-        background-color: inherit;
+        background-color: white;
     }
 
     #nav div {
